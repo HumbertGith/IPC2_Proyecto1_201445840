@@ -10,6 +10,7 @@ class Paciente:
     listaCe=[]
     estado1=""
     n=0
+    n1=0
   
       
     #lista_celulas:'Lista_celulas'
@@ -22,6 +23,7 @@ class Paciente:
         self.lista_lec=Lista_lectura()
         self.estado1=""
         self.n=0
+        self.n1=0
 
         
     def  getNombree(self):
