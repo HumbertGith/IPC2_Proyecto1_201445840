@@ -41,7 +41,7 @@ class Lista_lectura :
              aux.setSiguiente(nuevo)
             
              self.tamanio= self.tamanio+1
-        
+     #devuelve un booleano si encuentra o no   
     def encontrado(self, e, e1):
         encontrar = False
         temp = self.cabeza

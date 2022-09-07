@@ -6,7 +6,7 @@ from paciente import Paciente
 #from paciente import Paciente
 
 
-
+# nodo de lalista pacientes
 class Nodo_paciente(Paciente):
     siguiente: 'Nodo_paciente'
     paciente: 'Paciente'
@@ -25,7 +25,7 @@ class Nodo_paciente(Paciente):
           self.siguiente = siguiente
     def getPaciente(self) :
         return self.paciente
-    
+    #lista pacientes como tal
 class Lista_pacientes :
 
     listar_celulas:'Lista_celulas'
@@ -48,6 +48,7 @@ class Lista_pacientes :
 
     def esVacia(self): 
         return self.cabeza == None
+    #grega un paciente a la lista
     def add(self, paciente): 
         
         recibido = Nodo_paciente(paciente)  #convertimos el nodo que se trae en un nodoPersona
@@ -86,7 +87,7 @@ class Lista_pacientes :
         print("algo")
 
         
-
+    #busca un paciente como parametro su nombre
     def find(self, e) :
           NombreBuscado=e #debido a que el nombre viene de tipo objeto, es necesario pasarlo a String
           aux=self.cabeza
@@ -100,7 +101,7 @@ class Lista_pacientes :
                 
             
           return None #si no se encuentra se devuelve null
-    
+    # de vuelve una cadena con la informacion del paciente
     def listar(self) :
         cadena = ""
         nombre=""

@@ -4,7 +4,7 @@ from celulas import *
 
 
 
-    
+ # nodo de tipo lectura   
 class Nodo_lectura():
     siguiente: 'Nodo_lectura'
     def __init__(self, lectura):
@@ -14,6 +14,7 @@ class Nodo_lectura():
           return self.siguiente 
     def setSiguiente(self, siguiente):
           self.siguiente = siguiente  
+#nodo del tipo celula
 class Nodo_celula:
     siguiente: 'Nodo_celula'
     #celula: 'Celula'

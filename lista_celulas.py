@@ -24,6 +24,7 @@ class Lista_celulas :
 
     def esVacia(self): 
         return self.cabeza == None
+#agrega una celula a la lista
     def add(self, celula): 
         
         recibido = Nodo_celula(celula)  #convertimos el nodo que se trae en un nodoPersona
